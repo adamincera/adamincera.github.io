@@ -6,5 +6,6 @@ function organize() {
 		if(contentHeight < 10) contentHeight = 10;
 		$('#nav').offset({top: navHeight, left: 10});
 		$('#content').offset({top: contentHeight});
+		$('body').height(window.innerheight);
 	});
 }
