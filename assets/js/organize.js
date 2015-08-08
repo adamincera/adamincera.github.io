@@ -21,3 +21,14 @@ function organizeResume() {
 	});
 }
 
+function organizeContact() {
+	$(function() {
+		var navHeight = (window.innerHeight - $('#nav').height()) / 2 * 0.8;
+                console.log($('#nav').height());
+		var contentHeight = (window.innerHeight - $('#content').height()) / 2 * 0.95;
+		if(contentHeight < 10) contentHeight = 10;
+		$('#nav').offset({top: navHeight, left: 10});
+		$('#content').offset({top: contentHeight});
+		$('body').height(window.innerheight);
+	});
+}
