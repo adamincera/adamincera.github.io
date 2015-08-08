@@ -9,3 +9,15 @@ function organize() {
 		$('body').height(window.innerheight);
 	});
 }
+
+function organizeResume() {
+	$(function() {
+		var navHeight = (window.innerHeight - $('#nav').height()) / 2 * 0.8;
+		$('#nav').offset({top: navHeight, left: 10});
+        console.log(window.innerHeight);
+		$('#resume').height(window.innerheight);
+        console.log($('#resume').height());
+        console.log(window.innerHeight);
+	});
+}
+
